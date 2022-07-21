@@ -1,0 +1,310 @@
+ /* styles */
+ body {
+     font-family: 'Merriweather', serif;
+ }
+
+ /* .banner */
+ .banner {
+     display: flex;
+     background-color: black;
+     border-radius: 20px;
+     margin: 2% 7%;
+     height: 700px;
+
+ }
+
+ .heading {
+     color: aliceblue;
+     width: 50%;
+     margin-top: 1%;
+     margin-left: 7%;
+ }
+
+ #head {
+     font-size: 80px;
+
+ }
+
+ #link {
+     margin-top: 30px;
+
+ }
+
+
+ #watch {
+     font-size: 20px;
+     background-color: red;
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     font-weight: 700;
+     padding: 10px;
+     width: 200px;
+     border-radius: 3px;
+
+ }
+
+ #link:hover {
+     padding-left: 20%;
+     transform: scale(1.5) rotate(-360deg);
+     transition: width 2s, height 2s, transform 2s;
+ }
+
+ .banner .heading img {
+     height: 95%;
+     position: static;
+
+ }
+
+ /* .banner */
+ /* blog and link */
+ .information {
+     display: flex;
+     margin: 2% 7%;
+
+ }
+
+ .blogs {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+
+     gap: 30px;
+ }
+
+ .option {
+     margin-right: 3%;
+     background-color: black;
+     height: 100%;
+     padding: 20px;
+     border-radius: 10px;
+     width: 250px;
+ }
+
+ .info {
+     margin: 30px 20px;
+ }
+
+ .goto {
+     color: aliceblue;
+     font-size: 15px;
+     font-weight: 700;
+     background-color: darkgray;
+     margin: 10px 20px;
+     margin-top: 20;
+     padding: 10px;
+     border-radius: 5px;
+     text-decoration: none;
+ }
+
+ .Blog {
+
+     border: 1px solid rgb(223, 207, 207);
+     width: 100%;
+     padding-bottom: 5px;
+     border-radius: 7px;
+
+
+ }
+
+ .transfer {
+     border: 1px solid rgb(53, 48, 48);
+     border-radius: 3px;
+     margin-left: 5%;
+     width: 80px;
+     text-align: center;
+     padding-left: 3px;
+ }
+
+ .icon {
+     display: flex;
+     justify-content: space-around;
+ }
+
+
+
+
+ p {
+     margin: 10px;
+ }
+
+ footer {
+     background-color: black;
+ }
+
+ .goal {
+     color: aliceblue;
+     text-align: center;
+     padding-top: 100px;
+     padding-bottom: 30px;
+ }
+
+ hr {
+     color: aliceblue;
+     margin: 0 100px;
+
+ }
+
+ .conclusion {
+
+     display: flex;
+     justify-content: space-evenly;
+     padding-top: 50px;
+     padding-bottom: 50px;
+ }
+
+ .about {
+
+     color: grey;
+
+ }
+
+ .contacts {
+     text-align: center;
+     padding: 30px 30px;
+ }
+
+
+
+ .fa-brands {
+     width: 40px;
+     color: aliceblue;
+ }
+
+ .bonus {
+     display: none;
+ }
+
+ .flag {
+     padding: 10px;
+ }
+
+ .vs {
+     text-align: center;
+ }
+
+ .schedules {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     column-gap: 50px;
+     row-gap: 30px;
+ }
+
+ .schedule {
+     border: 1px solid cornsilk;
+ }
+
+
+
+ .identity {
+     display: flex;
+ }
+
+ .name {
+     font-weight: 700;
+ }
+
+ /* media query */
+ @media only screen and (max-width: 688px) {
+     .banner {
+         flex-direction: column;
+         justify-content: center;
+         width: 100%;
+         height: 100%;
+     }
+
+     #head {
+         font-size: 3em;
+     }
+
+     .banner .heading img {
+         width: 180%;
+     }
+
+     .information {
+
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+
+
+
+
+     .blogs {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+     .option {
+         background-color: white;
+     }
+
+     .conclusion {
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         justify-items: center;
+         align-items: center;
+         gap: 10%;
+     }
+
+     .schedules {
+         grid-template-columns: repeat(1, 1fr);
+     }
+ }
+
+ @media only screen and (min-width: 689px) and (max-width:992px) {
+     .banner {
+         display: flex;
+
+         width: 100%;
+         height: 70em;
+         margin-right: 0;
+
+     }
+
+
+     .information {
+
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .blogs {
+
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .banner .heading img {
+         width: 100%;
+         height: 80%;
+     }
+
+     .conclusion {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         justify-items: center;
+
+         gap: 10%;
+     }
+
+     .option {
+         background-color: white;
+     }
+
+     .bonus {
+         display: flex;
+         justify-content: space-around;
+         width: fit-content;
+         background-color: red;
+         color: aliceblue;
+         text-decoration: none;
+         padding: 10px;
+         border-radius: 5px;
+
+     }
+
+     .schedules {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+ }
